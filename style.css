@@ -1,0 +1,159 @@
+/* ESTILIZAÇÃO GERAL*/
+
+*{
+    margin: o;
+    padding: 0;
+    box-sizing:border-box ;
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #F5DEB4;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+.btn-contato button{
+    padding: 0.625rem 2.5rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    background-color: #E500D9;
+    border: 0;
+    border-radius: 1.875rem;
+    cursor: pointer;
+    transition: .2s;
+}
+
+h2.titulo{
+    color: #000000;
+    font-size: 2.375rem;
+    text-align: center;
+}
+
+h2.titulo span{
+    color:#E500D9;
+}
+
+/* ESTILO DO CABEÇALHO */
+header{
+    padding: 2.5rem 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: #000000;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 2.5rem;
+}
+
+.btn-contato button:hover{
+    box-shadow: 0rem 0rem 0.5rem #E500D9bc;
+    transform: scale(1.05);
+
+}
+
+/* ESTILO DO TOPO DO SITE*/
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 5.625rem;
+}
+
+.topo-do-site h1{
+    color: #000000;
+    font-size: 2.625rem;
+    line-height: 2.5rem;
+
+}
+
+.topo-do-site .txt-topo-site h1 span{
+    color:#E500D9
+}
+
+.topo-do-site .txt-topo-site{
+    color: #000000;
+    margin: 2.5rem 0;
+}
+
+.topo-do-site .img-topo-site img{
+    max-width: 100%; /* A imagem nunca será maior que seu contêiner pai */
+    height: auto; /* Isso manterá a proporção da imagem */
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate; 
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 1.875rem;
+    }
+}
+
+/* ESTILO DAS ESPECIALIDADES */
+
+section.especialidades{
+    padding:2.5rem 4%;
+
+}
+
+section.especialidades .flex{
+    gap: 3.75rem;
+}
+
+.especialidades .especialidades-box{
+    color: #000000;
+    padding: 2.5rem;
+    border-radius: 1.25rem;
+    margin-top: 2.8125rem;
+    transition: .2s;
+}
+
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #0fff79;
+
+}
+
+.especialidades .especialidades-box i{
+    font-size: 4.375rem;
+    color: #E500D9;
+}
+
+.especialidades .especialidades-box h3{
+    font-size: 1.75rem;
+    margin: 0.9375rem 0;
+}
