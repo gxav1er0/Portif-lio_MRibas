@@ -9,7 +9,7 @@
 }
 
 body{
-    background-color: #F5DEB4;
+    background-color: #eeae35;
     height: 100vh;
 }
 
@@ -40,6 +40,12 @@ h2.titulo{
 
 h2.titulo span{
     color:#E500D9;
+}
+
+button:hover{
+    box-shadow: 0rem 0rem 0.5rem #E500D9bc;
+    transform: scale(1.05);
+
 }
 
 /* ESTILO DO CABEÇALHO */
@@ -74,15 +80,11 @@ header nav ul li{
     padding: 0 2.5rem;
 }
 
-.btn-contato button:hover{
-    box-shadow: 0rem 0rem 0.5rem #E500D9bc;
-    transform: scale(1.05);
-
-}
 
 /* ESTILO DO TOPO DO SITE*/
 section.topo-do-site{
     padding: 40px 4%;
+
 }
 
 section.topo-do-site .flex{
@@ -112,6 +114,7 @@ section.topo-do-site .flex{
     height: auto; /* Isso manterá a proporção da imagem */
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate; 
+    border-radius: 20% 20%;
 }
 
 @keyframes flutuar{
@@ -144,7 +147,7 @@ section.especialidades .flex{
 
 .especialidades .especialidades-box:hover{
     transform: scale(1.05);
-    box-shadow: 0 0 20px #0fff79;
+    box-shadow: 0 0 20px #E500D9;
 
 }
 
@@ -156,4 +159,156 @@ section.especialidades .flex{
 .especialidades .especialidades-box h3{
     font-size: 1.75rem;
     margin: 0.9375rem 0;
+}
+
+/* ESTILO DO SOBRE */
+
+section.sobre{
+    padding: 5rem 4%;
+    box-shadow: 0 0 2.5rem 10px #ffffff13;
+
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 3.75rem;
+}
+.sobre .txt-sobre{
+    color: #fff;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    margin-bottom: 3opx;
+}
+
+.sobre .txt-sobre h2 span{
+    color: #E500D9;
+    display: block;
+}
+
+.sobre .txt-sobre p{
+    margin: 1.25rem 0;
+    text-align: justify;
+}
+
+.sobre .img-sobre img{
+    width: 29rem; /* A imagem nunca será maior que seu contêiner pai */
+    height: 32rem; /* Isso manterá a proporção da imagem */
+    border-radius: 15% 15%;
+}
+
+.sobre .txt-sobre .btn-social button{
+    width: 3.75rem;
+    height: 3.75rem;
+    border-radius: 1.875rem;
+    border: none;
+    background-color: #E500D9;
+    font-size: 1.375rem;
+    cursor: pointer;
+    margin: 0 0.3125rem;
+    transition: .2s;
+}
+/* ESTILO DO PORTIFÓLIO*/
+
+section.portifolio{
+    padding: 5rem 4%;
+    box-shadow: 0 0 2.5rem 10px #ffffff13;
+}
+
+section.portifolio .flex{
+    justify-content: space-around;
+    margin-top: 3.75rem;
+}
+
+.img-port{
+    width: 22.5rem;
+    height: 28.75rem;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 2.5rem;
+    position: relative;
+    box-shadow: 0 0 20px #e500da5e;
+
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: o;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000b3;
+    border-radius: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+/* ESTILO DO FORMULARIO DE CONTATO */
+
+    section.formulario{
+        padding: 5rem 4%;
+}
+
+form{
+    max-width: 31.25rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.625rem;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #dfdede51;
+    border: 0;
+    outline: 0;
+    padding: 1.25rem 0.9375rem;
+    border-radius: 0.9375rem;
+    color: #fff;
+    font-size: 1.125rem;
+
+}
+
+form input::placeholder{
+    color: #E500D9;
+}
+
+form textarea::placeholder{
+    color: #E500D9;
+}
+
+form textarea{
+    resize: none;
+    height: 200px;
+}
+
+form .btn-enviar{
+    margin-top: 1.25rem;
+    text-align: center;
+}
+
+form .btn-enviar input{
+    width: 120px;
+    border-color: #E500D9;
+    color: #fff;
+    font-weight: 700;
 }
